@@ -1,16 +1,30 @@
 import React from 'react';
-
+import { BrowserRouter as Router, Routes, Route, Outlet} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './routes/home';
+import About from './routes/About';
+import Contact from './routes/contact';
+import Proyects from './routes/Proyects';
+import './styles/global.scss';
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact/>} />
+          <Route path="projects" element={<Proyects/>} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
+function Layout() {
+  return (
+    <div>
+      <Navbar />
+      <Outlet />
     </div>
   );
 }

@@ -1,0 +1,18 @@
+// src/styles/themes.scss
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #3498db;
+    --1-color: #97b475bc;
+    --2-color: #E8F982;
+    --background-card-1: url('https://img.lovepik.com/background/20211021/large/lovepik-gorgeous-technology-wallpaper-background-image_500567322.jpg');
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #132a6e;
+    --1-color: #405c5cc1;
+    --2-color: #1d5639;
+    --background-card-1: url('https://png.pngtree.com/thumb_back/fh260/background/20220216/pngtree-blue-gradient-molecular-structure-neural-network-medical-background-image_930046.jpg')
+    }

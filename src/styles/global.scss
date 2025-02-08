@@ -1,0 +1,16 @@
+// src/styles/global.scss
+@import './theme.scss';
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  a {
+    color: var(--primary-color);
+  }
+.layout{
+    display: flex;
+    float: left;
+}
