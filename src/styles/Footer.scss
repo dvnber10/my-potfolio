@@ -1,0 +1,86 @@
+// src/styles/Footer.scss
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1.4rem 1.5rem 1rem;
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand strong {
+  color: var(--text);
+}
+
+.footer-brand span {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.footer-contact {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.footer-contact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: all 0.15s ease;
+}
+
+.footer-contact a:hover {
+  background: var(--hero-gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+.footer-icon {
+  font-size: 1.05rem;
+}
+
+.footer-cv {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.footer-cv:hover {
+  background: var(--hero-gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 1rem 0 0;
+}
+
+.footer-visits {
+  color: var(--accent-2);
+  font-weight: 600;
+}

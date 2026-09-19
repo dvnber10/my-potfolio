@@ -1,18 +1,31 @@
-// src/styles/themes.scss
+// src/styles/theme.scss — tokens de tema claro/oscuro
 :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #3498db;
-    --1-color: #97b475bc;
-    --2-color: #E8F982;
-    --background-card-1: url('https://img.lovepik.com/background/20211021/large/lovepik-gorgeous-technology-wallpaper-background-image_500567322.jpg');
-  }
-  
-  [data-theme="dark"] {
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --primary-color: #132a6e;
-    --1-color: #405c5cc1;
-    --2-color: #1d5639;
-    --background-card-1: url('https://png.pngtree.com/thumb_back/fh260/background/20220216/pngtree-blue-gradient-molecular-structure-neural-network-medical-background-image_930046.jpg')
-    }
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-2: #eef1f7;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --accent: #1f3a5f;
+  --accent-2: #2e6da4;
+  --accent-soft: rgba(46, 109, 164, 0.12);
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 18px 50px rgba(15, 23, 42, 0.14);
+  --radius: 14px;
+  --hero-gradient: linear-gradient(135deg, #1f3a5f 0%, #2e6da4 55%, #3f8fc2 100%);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #111a2c;
+  --surface-2: #16223a;
+  --text: #e5eefc;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --accent: #3b82f6;
+  --accent-2: #60a5fa;
+  --accent-soft: rgba(59, 130, 246, 0.16);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.5);
+  --hero-gradient: linear-gradient(135deg, #0f1a33 0%, #1b3a66 55%, #29598c 100%);
+}
